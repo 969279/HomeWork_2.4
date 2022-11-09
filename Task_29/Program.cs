@@ -6,12 +6,13 @@ Console.Write("Введите число элементов массива: ");
 int size = Convert.ToInt32(Console.ReadLine());
 
 int[] array = new int[size];
+Random rnd = new Random();
 
 void ReadArray(int[] numbers)
 {
     for (int i = 0; i < numbers.Length; i++)
     {
-        numbers[i] = new Random().Next(0,100);
+        numbers[i] = rnd.Next(0,100);
     }
 }
 
@@ -26,3 +27,7 @@ void PrintArray(int[] numbers)
 
 ReadArray(array);
 PrintArray(array);
+
+// collection[index] = new Random().Next(1, 100);
+// Random() rnd = new Random(); 
+// rnd.Next(1,100); 
