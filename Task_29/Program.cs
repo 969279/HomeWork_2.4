@@ -31,3 +31,35 @@ PrintArray(array);
 // collection[index] = new Random().Next(1, 100);
 // Random() rnd = new Random(); 
 // rnd.Next(1,100); 
+/*
+void setValue(int[] syb, int index)
+ {
+     Console.WriteLine("Введите значение индекса " + index);
+     syb[index] = Convert.ToInt32(Console.ReadLine());
+ }
+
+ int[] syb = new int[9];
+ for (int index = 0; index < syb.Length; index++) 
+ {
+     setValue(syb, index);
+ }
+ string output = $"{syb[0]}";
+ for (int index = 1; index < syb.Length - 1; index++)
+  {
+     output += $", {syb[index]}";
+  }
+ output += $", {syb[8]}";
+
+ Console.WriteLine("Массив: " + output);
+*/
+
+/*
+Console.Write ("Введите A: ");
+int a = int.Parse (Console.ReadLine ()!); 
+Console.Write ("Введите B: ");
+int b = int.Parse (Console.ReadLine ()!);
+int syb = a;
+for (int i = 1; i < b; i++) 
+  syb = syb * a;
+ Console.WriteLine($"Число {a} в степени {b} равно {syb}");
+*/
